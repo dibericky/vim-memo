@@ -14,6 +14,7 @@
 - l : right
 - h : left
 - u : undo
+- a : right + insert mode
 - shift + i: go to starting line + insert mode
 - shift + a : to to ending line + insert mode
 - d + d : delete line
@@ -21,7 +22,8 @@
 - d + b : delete back word
 - d + j : delete current and next line
 - d + k : delete current and previous line
-- p : paste
+- p : paste below 
+- shift + p : paste above
 - y + w : copy next word
 - y + b : copy previous word
 - y + j : copy current and next line
@@ -30,4 +32,5 @@
 - \* : go to next occourrence of word
 - \# : go to previous occourrence of word
 - / something + Enter : search "something" and then navigate with n and shift+n
- 
+- o : insert new line below
+- shift + o : insert new line above
