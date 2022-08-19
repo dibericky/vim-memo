@@ -17,6 +17,12 @@
 - a : right + insert mode
 - shift + i: go to starting line + insert mode
 - shift + a : to to ending line + insert mode
+- $ : go to the ending of the line
+- ^ : go to the starting of the line
+- shift + l : go to the last line of current screen
+- shift + h : go to the first line of current screen 
+- shift + m : go to the middle line of current screen
+- e : go to the end of the current word
 - d + d : delete line
 - d + w : delete next word
 - d + b : delete back word
@@ -45,3 +51,13 @@
 - shift + s : delete all line and go into insert mode
 - d + t + x : delete up to character x
 - " + _ + d + some_combo : delete without copy
+- ctrl + u : page up 
+- ctrl + d : page down 
+- gg : go to the top of the page
+- shift + G : go to the bottom of the page
+- : + N : go to line N
+- N + j : go down of N line
+- N + k : go up of N line
+- { : go to the previous paragraph
+- % : go to matching braces, or paranthesis inside code 
+
