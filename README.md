@@ -28,6 +28,8 @@
 - d + b : delete back word
 - d + j : delete current and next line
 - d + k : delete current and previous line
+- d + i + { : delete inside matching brackets
+- d + i + ( : delete inside matching parenteses
 - shift + d : delete the rest of the line (to right)
 - p : paste below 
 - shift + p : paste above
