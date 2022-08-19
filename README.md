@@ -62,4 +62,14 @@
 - N + k : go up of N line
 - { : go to the previous paragraph
 - % : go to matching braces, or paranthesis inside code 
+- Ctrl + w + v : open new buffer
+- Ctrl + w + w : go to other buffer
+- Ctrl + w + r : reverse  
+- Ctrl + w + q : quit current buffer
+- Ctrl + w + o : close all buffer except the current one
+
+## Commands
+- :e file_path : open file at file_path
+- :Ex : file explorer 
+
 
