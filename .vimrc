@@ -21,5 +21,11 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " vim-plug
 call plug#begin()
 Plug 'elmcast/elm-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
+" code completion
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
 
 let g:elm_syntastic_show_warnings = 1
