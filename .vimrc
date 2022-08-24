@@ -2,6 +2,8 @@ syntax enable
 filetype plugin indent on
 let g:rustfmt_autosave = 1
 
+highlight Pmenu ctermbg=238 gui=bold
+
 execute pathogen#infect()
 
 
@@ -22,6 +24,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 call plug#begin()
 Plug 'elmcast/elm-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dracula/vim', {'as':'dracula'}
 call plug#end()
 
 " code completion
