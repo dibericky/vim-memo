@@ -1,5 +1,7 @@
 syntax enable
 filetype plugin indent on
+:set number
+
 let g:rustfmt_autosave = 1
 
 highlight Pmenu ctermbg=238 gui=bold
