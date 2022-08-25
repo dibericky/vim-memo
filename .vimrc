@@ -4,10 +4,12 @@ filetype plugin indent on
 
 let g:rustfmt_autosave = 1
 
-highlight Pmenu ctermbg=238 gui=bold
+set background=dark
+
+hi Pmenu ctermbg=60 ctermfg=30
+hi PmenuSel ctermbg=30 ctermfg=60
 
 execute pathogen#infect()
-
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -27,6 +29,7 @@ call plug#begin()
 Plug 'elmcast/elm-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim', {'as':'dracula'}
+Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
 " code completion
@@ -37,5 +40,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+colorscheme iceberg
 
 let g:elm_syntastic_show_warnings = 1
