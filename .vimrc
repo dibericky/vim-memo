@@ -31,6 +31,7 @@ Plug 'elmcast/elm-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim', {'as':'dracula'}
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'vim-test/vim-test'
 call plug#end()
 
 " code completion
