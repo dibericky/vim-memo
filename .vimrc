@@ -3,7 +3,7 @@ filetype plugin indent on
 :set number
 
 let g:rustfmt_autosave = 1
-
+:nnoremap <Leader>w <C-w>
 set background=dark
 
 hi Pmenu ctermbg=60 ctermfg=30
