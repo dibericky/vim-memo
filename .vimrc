@@ -1,6 +1,6 @@
 syntax enable
 filetype plugin indent on
-:set number
+:set number relativenumber
 
 let g:rustfmt_autosave = 1
 :nnoremap <Leader>w <C-w>
