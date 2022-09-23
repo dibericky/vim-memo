@@ -34,6 +34,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'vim-test/vim-test'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
 call plug#end()
 
 " code completion
@@ -57,6 +58,13 @@ function! ShowDocumentation()
     call feedkeys('K', 'in')
   endif
 endfunction
+
+" FZF key bindings
+nnoremap <C-f> :FZF<CR>
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-i': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
 colorscheme iceberg
 
