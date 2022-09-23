@@ -35,6 +35,7 @@ Plug 'vim-test/vim-test'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " code completion
@@ -60,7 +61,7 @@ function! ShowDocumentation()
 endfunction
 
 " FZF key bindings
-nnoremap <C-f> :FZF<CR>
+nnoremap <silent> <C-f> :GFiles<CR>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-i': 'split',
